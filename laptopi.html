@@ -1,0 +1,544 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ЕМО Клуб – организация за компютърна техника, електроника и консултации.">
+    <meta name="keywords" content="ЕМО Клуб, компютри, лаптопи, електроника, периферия">
+    <title>ЕМО КЛУБ | КОМПЮТЪРНА ТЕХНОЛОГИЯ</title>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="shortcut icon" href="img/tab_menu.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <style>
+        body{
+            font-family: 'Merriweather';
+        }
+    </style>
+</head>
+<body>
+        <div id="header">
+            <a href="index.html"><img src="img/logo1.png" id="logo"></a><br>
+            <p id="phone">📞+359 87 675 5964</p>
+            <div class="col-3" id="search">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Търси...">
+                    <button class="btn btn-outline-info" type="submit">Търси</button>
+                  </form>
+            </div><br><br>
+            <div class="profile">
+                <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                  👨🏼‍💼Профил
+                </button>
+                <form class="dropdown-menu p-4">
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormEmail2" class="form-label">Имейл адрес</label>
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@gmail.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormPassword2" class="form-label">Парола</label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Парола">
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                      <label class="form-check-label" for="dropdownCheck2">
+                        Запомни ме
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Влез</button>
+                </form>
+              </div>
+              <div class="favourite">
+                <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                  ❤ Любими
+                </button>
+                <form>
+                </form>
+            </div>
+            <div class="kolichka">
+                <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                  🛒 Количка
+                </button>
+                <form>
+                </form>
+            </div>
+        </div><br><br><br>
+        <nav class="main-nav">
+         <ul class="nav-menu">
+    <li><a href="index.html">Начало</a></li>
+    <li><a href="about.html">За нас</a></li>
+    <li><a href="laptopi.html" class="active">Лаптопи</a></li>
+    <li><a href="komputri.html">Компютри</a></li>
+    <li><a href="periferia.html">Периферия</a></li>
+        <li><a href="gallery.html">Галерия</a></li>
+        <li><a href="news.html">Новини</a></li>
+    <li><a href="contacts.html">Контакти</a></li>
+  </ul>
+</nav>
+<div class="filter" style="float: left;margin-right: 80px;background-color: white;margin-left: 10px;">
+  <h2>Модел</h2>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="lenovo" onchange="change()">Lenovo</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="acer" onchange="change()">Acer</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="asus" onchange="change()">Asus</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="dell" onchange="change()">Dell</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="HP" onchange="change()">HP</label>
+  </div>
+  <h2>Процесор</h2>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="i9" onchange="change()">Intel Core i9</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="i7" onchange="change()">Intel Core i7</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="i5" onchange="change()">Intel Core i5</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="ryzen9" onchange="change()">AMD Ryzen 9</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="ryzen5" onchange="change()">AMD Ryzen 5</label>
+  </div>
+  <h2>Видео карта</h2>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="rx6850m" onchange="change()">AMD RX 6850M XT 12GB </label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="3060" onchange="change()">NVIDIA RTX 3060 6GB </label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="3080ti" onchange="change()">NVIDIA RTX 3080 Ti 16 GB GDDR6</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="iris" onchange="change()">Intel Iris Xe Graphics </label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="A2000" onchange="change()">NVIDIA RTX A2000 8GB </label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="3070ti" onchange="change()">NVIDIA RTX 3070 Ti 8GB</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="3050ti" onchange="change()">NVIDIA RTX 3050 Ti 4GB GDDR6</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="3080" onchange="change()">NVIDIA GeForce RTX 3080</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="3070" onchange="change()">NVIDIA GeForce RTX 3070</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="rgvega" onchange="change()">AMD Radeon RX Vega 7</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="MX550" onchange="change()">NVIDIA MX550 2GB GDDR6</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="radeon660m" onchange="change()">NVIDIA RTX A1000 4GB GDDR6</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="a1000" onchange="change()">AMD Radeon 660M </label>
+  </div>
+<h2>Оперативна памет</h2>
+<div class="checkbox">
+  <label><input type="checkbox" rel="64" onchange="change()">64GB</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" rel="32" onchange="change()">32GB</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" rel="16" onchange="change()">16GB</label>
+</div>
+</div>
+<div class="result">
+    <div class="lenovo ryzen9 rx6850m 32">
+      <div class="card">
+        <img src="img/laptops/lenovo4.jpg" height="290px">
+        <div class="card-body">
+        <h3>Лаптоп Lenovo Legion 7 16ARHA7</h3>
+        <p>•AMD Ryzen 9 6900HX (3.3/4.9GHz, 16M)<br>
+          •AMD RX 6850M XT 12GB<br>
+          •32 GB DDR5 4800 MHz<br>
+          •2 TB M.2 NVMe SSD<br>
+          •16" (40.64 см) WQXGA IPS матов<br>
+          •165 Hz<br>
+          •24 месеца гаранция</p>
+          <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">6199.00 лв.</p>
+          <a class="button" href="lenovo4.html" style="background-color: #0dcaf0;">Купи</a><br><br>
+        </div>
+      </div>
+  </div>
+
+  <div class="lenovo ryzen5 3060 64">
+    <div class="card">
+      <img src="img/laptops/lenovo3.jpg">
+      <div class="card-body">
+      <h3>Лаптоп Lenovo Legion 5 Pro 16ACH6H</h3>
+      <p style="margin-bottom: 10%;">•AMD Ryzen 5 5600H(3.3-4.2 GHz,16M)<br>
+        •NVIDIA RTX 3060 6GB6<br>
+        •64 GB DDR4 3200 MHz<br>
+        •2 TB M.2 NVMe SSD<br>
+        •165 Hz<br>
+        •24 месеца гаранция</p><br><br>
+        <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">4799.00 лв.</p>
+        <a class="button" href="lenovo3.html" style="background-color: #0dcaf0;">Купи</a>
+      </div>
+    </div>
+</div>
+
+<div class="lenovo i5 iris 16">
+  <div class="card">
+    <img src="img/laptops/lenovo2.jpg" style="margin-top: 20px;">
+    <div class="card-body">
+    <h3>Лаптоп Lenovo ThinkPad X1 Carbon G10</h3>
+    <p>•Intel Core i5-1240P (1.2/4.4GHz, 12M)<br>
+      •Intel Iris Xe Graphics<br>
+      •16 GB LPDDR5 5200 MHz<br>
+      •2 TB M.2 NVMe SSD<br>
+      •14" (35.56 см) Full HD+ IPS матов с LED подсветка<br>
+      •24 месеца гаранция</p><br><br><br>
+      <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">5349.00 лв.</p>
+      <a class="button" href="lenovo2.html" style="background-color: #0dcaf0;">Купи</a>
+    </div>
+  </div>
+</div>
+
+<div class="lenovo i7 A2000 64" style="float: left;">
+  <div class="card">
+    <img src="img/laptops/lenovo1.jpg">
+    <div class="card-body">
+    <h3>Лаптоп Lenovo ThinkPad P16 G1</h3>
+    <p>•Intel Core i7-12800HX (1.5/4.8GHz, 25M)<br>
+      •NVIDIA RTX A2000 8GB GDDR6<br>
+      •64 GB DDR5 4800 MHz Non-ECC<br>
+      •2 TB M.2 NVMe SSD<br>
+      •16" (40.64 см) Full HD+ IPS матов<br>
+      •24 месеца гаранция</p><br><br><br><br><br><br>
+      <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">8698.00 лв</p>
+      <a class="button" href="lenovo1.html" style="background-color: #0dcaf0;">Купи</a>
+    </div>
+  </div>
+</div>
+
+<div class="acer i9 3080ti 16" style="float: left;">
+  <div class="card">
+    <img src="img/laptops/acer4.jpg" style="margin-top: 20px;">
+    <div class="card-body">
+    <h3>Лаптоп Acer Predator</h3>
+    <p>•Intel Core i9-12900H (1.8/5.0GHz, 24M)<br>
+      •NVIDIA RTX 3080 Ti 16 GB GDDR6<br>
+      •16 GB LPDDR5 4800 MHz<br>
+      •2 TB M.2 NVMe SSD<br>
+      •16" (40.64 см) WQXGA IPS матов с LED подсветка<br>
+      •240 Hz<br>
+      •24 месеца гаранция</p>
+      <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">6799.00 лв.</p>
+      <a class="button" href="acer4.html" style="background-color: #0dcaf0;">Купи</a>
+    </div>
+  </div>
+</div>
+
+<div class="acer ryzen9 3070ti 32">
+  <div class="card">
+    <img src="img/laptops/acer3.jpg" style="margin-top: 20px;">
+    <div class="card-body">
+    <h3>Лаптоп Acer Nitro 5</h3>
+    <p>•AMD Ryzen 9 6900HX (3.3/4.9GHz, 16M)<br>
+      •NVIDIA RTX 3070 Ti 8GB<br>
+      •32 GB DDR5 4800 MHz<br>
+      •2 TB M.2 NVMe SSD<br>
+      •17.3" (43.94 см) WQHD IPS матов с LED подсветка<br>
+      •165 Hz<br>
+      •24 месеца гаранция</p>
+      <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">6048.00 лв.</p>
+      <a class="button" href="acer3.html" style="background-color: #0dcaf0;">Купи</a>
+    </div>
+  </div>
+</div>
+
+<div class="acer ryzen5 3050ti 32">
+  <div class="card">
+    <img src="img/laptops/acer3.jpg" style="margin-top: 20px;">
+    <div class="card-body">
+    <h3>Лаптоп Acer Nitro 5 AN517-42-R8SQ</h3>
+    <p>•AMD Ryzen 5 6600H (3.3/4.5GHz, 16M)<br>
+      •NVIDIA RTX 3050 Ti 4GB GDDR6<br>
+      •32 GB DDR5 4800 MHz<br>
+      •1TB M.2 NVMe SSD<br>
+      •17.3" (43.94 см) Full HD IPS матов с LED подсветка<br>
+      •144 Hz
+      •24 месеца гаранция</p>
+      <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">3598.00 лв.</p>
+      <a class="button" href="acer2.html" style="background-color: #0dcaf0;">Купи</a>
+    </div>
+  </div>
+</div>
+
+<div class="acer i7 3070ti 32">
+  <div class="card">
+    <img src="img/laptops/acer3.jpg" style="margin-top: 20px;">
+    <div class="card-body">
+    <h3>Лаптоп Acer Nitro 5 AN517-55-7027</h3>
+    <p>•Intel Core i7-12700H (1.7/4.7GHz, 24M)<br>
+      •NVIDIA RTX 3070 Ti 8GB<br>
+      •32 GB DDR4 3200 MHz<br>
+      •2 TB M.2 NVMe SSD<br>
+      •17.3" (43.94 см) WQHD IPS матов с LED подсветка<br>
+      •165 Hz<br>
+      •24 месеца гаранция</p>
+      <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">5199.00 лв.</p>
+      <a class="button" href="acer1.html" style="background-color: #0dcaf0;">Купи</a>
+    </div>
+  </div>
+</div>
+
+<div class="asus i9 3070ti 64">
+  <div class="card">
+    <img src="img/laptops/asus4.jpg" style="margin-top: 20px;">
+    <div class="card-body">
+    <h3>Лаптоп ASUS ROG</h3>
+    <p style="margin-bottom: 21%;">•Intel Core i9-12950HX (1.7/5.0GHz, 30M)<br>
+      •NVIDIA RTX 3070 Ti 8GB<br>
+      •64 GB DDR5 4800 MHz<br>
+      •2 TB M.2 NVMe SSD<br>
+      •17.3" (43.94 см) WQHD IPS матов с LED подсветка<br>
+      •240 Hz<br>
+      •24 месеца гаранция</p>
+      <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">7198.00 лв.</p>
+      <a class="button" href="asus4.html" style="background-color: #0dcaf0;">Купи</a>
+    </div>
+  </div>
+</div>
+
+<div class="asus i7 3070ti 64">
+  <div class="card">
+    <img src="img/laptops/asus3.jpg" style="margin-top: 20px;">
+    <div class="card-body">
+    <h3>Лаптоп ASUS ProArt Studiobook Pro 16</h3>
+    <p style="margin-bottom: 35%;">•Intel Core i7-12700H (1.7/4.7GHz, 24M)<br>
+      •NVIDIA RTX 3070 Ti 8GB<br>
+      •64 GB DDR5 4800 MHz<br>
+      •2 x 1 TB SSD<br>
+      •16" (40.64 см) UHD+ OLED лъскав<br>
+      •24 месеца гаранция</p>
+      <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">6698.00 лв.</p>
+      <a class="button" href="asus3.html" style="background-color: #0dcaf0;">Купи</a>
+    </div>
+  </div>
+</div>
+
+<div class="asus i5 3080 16">
+  <div class="card">
+    <img src="img/laptops/asus2.jpg" style="margin-top: 20px;">
+    <div class="card-body">
+    <h3>Лаптоп ASUS ROG</h3>
+    <p>•Intel Core i5-12500H (1.8/4.5GHz, 18M)<br>
+      •ROG XG Mobile - NVIDIA GeForce RTX 3080, Intel Iris Xe Graphics<br>
+      •16 GB LPDDR5 5200 MHz<br>
+      •1TB M.2 NVMe SSD<br>
+      •13.4" (34.04 см) Full HD+ IPS матов тъчскрийн<br>
+      •120 Hz<br>
+      •24 месеца гаранция</p>
+      <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">6579.00 лв.</p>
+      <a class="button" href="asus2.html" style="background-color: #0dcaf0;">Купи</a>
+    </div>
+  </div>
+</div>
+
+<div class="asus ryzen9 3080ti 16">
+  <div class="card">
+    <img src="img/laptops/asus1.jpg" style="margin-top: 20px;">
+    <div class="card-body">
+    <h3>Лаптоп ASUS ROG Zephyrus Duo 16</h3>
+    <p>•AMD Ryzen 9 6900HX (3.3/4.9GHz, 16M)<br>
+      •NVIDIA RTX 3080 Ti 16 GB GDDR6<br>
+      •64 GB DDR5 4800 MHz<br>
+      •2 TB M.2 NVMe SSD<br>
+      •16" (40.64 см) WQXGA ROG Nebula HDR матов с mini-LED подсветка<br>
+      •165 Hz<br>
+      •24 месеца гаранция</p>
+      <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">9898.00 лв.</p>
+      <a class="button" href="asus1.html" style="background-color: #0dcaf0;">Купи</a>
+    </div>
+  </div>
+</div>
+
+<div class="dell i7 A2000 64">
+  <div class="card">
+    <img src="img/laptops/dell4.jpg" style="margin-top: 20px;">
+    <div class="card-body">
+    <h3>Лаптоп Dell Precision</h3>
+    <p style="margin-bottom: 23%;">•Intel Core i7-12700H (1.7/4.7GHz, 24M)<br>
+      •NVIDIA RTX A2000 8GB GDDR6<br>
+      •64 GB DDR5 4800 MHz<br>
+      •2 TB M.2 NVMe SSD<br>
+      •17" (43.18 см) UHD+ IPS матов тъчскрийн с WLED подсветка<br>
+      •36 месеца гаранция</p>
+      <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">8998.00 лв.</p>
+      <a class="button" href="dell4.html" style="background-color: #0dcaf0;">Купи</a>
+    </div>
+  </div>
+</div>
+
+<div class="dell i9 3050ti 32">
+  <div class="card">
+    <img src="img/laptops/dell3.jpg" style="margin-top: 20px;">
+    <div class="card-body">
+    <h3>Лаптоп Dell XPS 15 9520</h3>
+    <p>•Intel Core i9-12900HK (1.8/5.0GHz, 24M)<br>
+      •NVIDIA RTX 3050 Ti 4GB GDDR6<br>
+      •32 GB DDR5 4800 MHz<br>
+      •2 TB M.2 NVMe SSD<br>
+      •15.6" (39.62 см) 3.5K OLED лъскав тъчскрийн с WLED подсветка<br>
+      •36 месеца гаранция</p>
+      <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">8099.00 лв.</p>
+      <a class="button" href="dell3.html" style="background-color: #0dcaf0;">Купи</a>
+    </div>
+  </div>
+</div>
+
+<div class="dell i5 MX550 64">
+  <div class="card">
+    <img src="img/laptops/dell2.jpg" style="margin-top: 20px;">
+    <div class="card-body">
+    <h3>Лаптоп Dell Latitude 5531</h3>
+    <p style="margin-bottom: 13%;">•Intel Core i5-12600H (2.0/4.5GHz, 18M)<br>
+      •NVIDIA MX550 2GB GDDR6<br>
+      •64 GB DDR5 4800 MHz<br>
+      •2 TB M.2 NVMe SSD<br>
+      •15.6" (39.62 см) Full HD IPS матов с LED подсветка<br>
+      •36 месеца Dell Basic Onsite</p>
+      <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">4498.00 лв.</p>
+      <a class="button" href="dell2.html" style="background-color: #0dcaf0;">Купи</a>
+    </div>
+  </div>
+</div>
+
+<div class="dell ryzen5 rxvega 16">
+  <div class="card">
+    <img src="img/laptops/dell1.jpg" style="margin-top: 20px;">
+    <div class="card-body">
+    <h3>Лаптоп Dell Vostro 5625</h3>
+    <p>•AMD Ryzen 5 5625U (2.3/4.3GHz, 16MB)<br>
+      •AMD Radeon RX Vega 7<br>
+      •8 GB DDR4 3200 MHz<br>
+      •500GB M.2 NVMe SSD<br>
+      •16" (40.64 см) Full HD+ IPS матов<br>
+      •36 месеца Dell Basic Onsite</p>
+      <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">5349.00 лв.</p>
+      <a class="button" href="dell1.html" style="background-color: #0dcaf0;">Купи</a>
+    </div>
+  </div>
+</div>
+
+<div class="HP i9 3080 32">
+  <div class="card">
+    <img src="img/laptops/hp4.jpg" style="margin-top: 20px;">
+    <div class="card-body">
+    <h3>Лаптоп HP Omen 17-ck0003nu</h3>
+    <p style="margin-bottom: 10%;">•Intel Core i9-11900H (4.9GHz, 24M)<br>
+      •NVIDIA RTX 3080 16GB<br>
+      •32 GB DDR4 3200 MHz<br>
+      •1TB M.2 NVMe SSD<br>
+      •17.3" (43.94 см) WQHD IPS матов с LED подсветка<br>
+      •165 Hz<br>
+      •24 месеца гаранция</p>
+      <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">5299.00 лв.</p>
+      <a class="button" href="hp4.html" style="background-color: #0dcaf0;">Купи</a>
+    </div>
+  </div>
+</div>
+
+<div class="HP i7 a1000 32">
+  <div class="card">
+    <img src="img/laptops/hp3.jpg" style="margin-top: 20px;">
+    <div class="card-body">
+    <h3>Лаптоп HP ZBook Fury 16 G9</h3>
+    <p style="margin-bottom: 22%;">•Intel Core i7-12850HX (1.5-4.8GHz, 25M)<br>
+      •NVIDIA RTX A1000 4GB GDDR6<br>
+      •32 GB DDR5 4800 MHz<br>
+      •2 TB M.2 NVMe SSD<br>
+      •16" (40.64 см) Full HD+ IPS матов с LED подсветка<br>
+      •36 месеца гаранция</p>
+      <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">7299.00 лв.</p>
+      <a class="button" href="hp3.html" style="background-color: #0dcaf0;">Купи</a>
+    </div>
+  </div>
+</div>
+
+<div class="HP i5 3060 32">
+  <div class="card">
+    <img src="img/laptops/hp2.jpg" style="margin-top: 20px;">
+    <div class="card-body">
+    <h3>Лаптоп HP Omen 16-k0009nn</h3>
+    <p>•Intel Core i5-12500H (1.8/4.5GHz, 18M)<br>
+      •NVIDIA RTX 3060 6GB<br>
+      •32 GB DDR5 4800 MHz<br>
+      •1TB M.2 NVMe SSD<br>
+      •16.1" (40.89 см) Full HD IPS матов с WLED подсветка<br>
+      •144 Hz<br>
+      •24 месеца гаранция</p>
+      <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">4148.00 лв.</p>
+      <a class="button" href="hp2.html" style="background-color: #0dcaf0;">Купи</a>
+    </div>
+  </div>
+</div>
+
+<div class="HP ryzen5 radeon660m 32">
+  <div class="card">
+    <img src="img/laptops/hp1.jpg" style="margin-top: 20px;">
+    <div class="card-body">
+    <h3>Лаптоп HP EliteBook 845 G9</h3>
+    <p style="margin-bottom: 28%;">•AMD Ryzen 5 PRO 6650U (2.9/4.5 GHz, 16M)<br>
+      •AMD Radeon 660M<br>
+      •32 GB DDR5 4800 MHz<br>
+      •1TB M.2 NVMe SSD<br>
+      •14" (35.56 см) Full HD+ IPS матов<br>
+      •36 месеца гаранция</p>
+      <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">3578.00 лв.</p>
+      <a class="button" href="hp1.html" style="background-color: #0dcaf0;">Купи</a>
+    </div>
+  </div>
+</div>
+</div>
+        <div id="footer" style="margin-top: 175%;">
+        <div class="footer-links">
+    <a href="index.html">Начало</a>
+    <a href="about.html">За нас</a>
+    <a href="laptopi.html">Лаптопи</a>
+    <a href="komputri.html">Компютри</a>
+    <a href="periferia.html">Периферия</a>
+    <a href="gallery.html">Галерия</a>
+    <a href="news.html">Новини</a>
+    <a href="contacts.html">Контакти</a>
+  </div>
+  <div class="footer-social">
+    <a href="https://www.facebook.com/emre.feim/" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/emre.dzh05/?theme=dark" target="_blank">Instagram</a>
+    <a href="https://www.youtube.com/@emre4323" target="_blank">YouTube</a>
+  </div>
+  <div class="footer-partners">
+  <p>Партньори:</p>
+  <a href="https://www.intel.com" target="_blank">Intel</a> |
+  <a href="https://www.microsoft.com" target="_blank">Microsoft</a> |
+  <a href="https://www.google.com" target="_blank">Google</a>
+</div>
+<br>
+  <p class="footer-copy">© 2026 ЕМО Клуб | Всички права запазени</p>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

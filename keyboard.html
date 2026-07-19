@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ЕМО Клуб – организация за компютърна техника, електроника и консултации.">
+    <meta name="keywords" content="ЕМО Клуб, компютри, лаптопи, електроника, периферия">
+    <title>ЕМО КЛУБ | КОМПЮТЪРНА ТЕХНОЛОГИЯ</title>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="shortcut icon" href="img/tab_menu.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <style>
+        body{
+            font-family: 'Merriweather';
+        }
+    </style>
+</head>
+<body>
+        <div id="header">
+            <a href="index.html"><img src="img/logo1.png" id="logo"></a><br>
+            <p id="phone">📞+359 87 675 5964</p>
+            <div class="col-3" id="search">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Търси...">
+                    <button class="btn btn-outline-info" type="submit">Търси</button>
+                  </form>
+            </div><br><br>
+            <div class="profile">
+                <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                  👨🏼‍💼Профил
+                </button>
+                <form class="dropdown-menu p-4">
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormEmail2" class="form-label">Имейл адрес</label>
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@gmail.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormPassword2" class="form-label">Парола</label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Парола">
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                      <label class="form-check-label" for="dropdownCheck2">
+                        Запомни ме
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Влез</button>
+                </form>
+              </div>
+              <div class="favourite">
+                <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                  ❤ Любими
+                </button>
+                <form>
+                </form>
+            </div>
+            <div class="kolichka">
+                <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                  🛒 Количка
+                </button>
+                <form>
+                </form>
+            </div>
+        </div><br><br><br>
+        <nav class="main-nav">
+          <ul class="nav-menu">
+    <li><a href="index.html">Начало</a></li>
+    <li><a href="about.html">За нас</a></li>
+    <li><a href="laptopi.html">Лаптопи</a></li>
+    <li><a href="komputri.html">Компютри</a></li>
+    <li><a href="periferia.html">Периферия</a></li>
+    <li><a href="gallery.html">Галерия</a></li>
+    <li><a href="news.html">Новини</a></li>
+    <li><a href="contacts.html">Контакти</a></li>
+  </ul>
+</nav>
+<div class="filter" style="float: left;margin-right: 80px;background-color: white;margin-left: 10px;">
+  <h2>Модел</h2>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="cougar" onchange="change()">COUGAR</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="canyon" onchange="change()">Canyon</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="razer" onchange="change()">Razer</label>
+  </div>
+    <div class="checkbox">
+    <label><input type="checkbox" rel="redragon" onchange="change()">Redragon</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="steel" onchange="change()">SteelSeries</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="logitech" onchange="change()">Logitech</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="delux" onchange="change()">Delux</label>
+  </div>
+  <h2>Процесор</h2>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="wireless" onchange="change()">Безжична</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" rel="kabel" onchange="change()">С кабел</label>
+  </div>
+</div>
+<div class="result">
+    <div class="cougar kabel">
+      <div class="card">
+        <img src="img/periferia/keyboard/1.png">
+        <div class="card-body">
+        <h3>COUGAR Core</h3>
+        <p>•Технология: С кабел<br>
+          •Интерфейс: USB 2.0<br>
+          •Подсветка: Да<br>
+          •БДС кирилизация: Не<br>
+          •Гаранционен срок: 24 месеца гаранция</p>
+          <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">50.00 лв.</p>
+          <a class="button" href="keyboard1.html" style="background-color: #0dcaf0;">Купи</a>
+        </div>
+      </div>
+  </div>
+
+  <div class="canyon kabel">
+    <div class="card">
+      <img src="img/periferia/keyboard/2.jpg">
+      <div class="card-body">
+      <h3>Canyon Hazard GK-6</h3>
+      <p style="margin-bottom: 15%;">•Технология: С кабел<br>
+        •Интерфейс: USB<br>
+        •Подсветка: Да<br>
+        •БДС кирилизация: Не<br>
+        •Гаранционен срок: 24 месеца гаранция</p>
+        <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">79.00 лв.</p>
+        <a class="button" href="keyboard2.html" style="background-color: #0dcaf0;">Купи</a><br><br>
+      </div>
+    </div>
+</div>
+
+<div class="razer kabel">
+  <div class="card">
+    <img src="img/periferia/keyboard/3.jpg">
+    <div class="card-body">
+    <h3>Razer BlackWidow V3</h3>
+    <p>•Технология: С кабел<br>
+      •Интерфейс: USB<br>
+      •Подсветка: Да<br>
+      •БДС кирилизация: Не<br>
+      •Гаранционен срок: 24 месеца гаранция</p>
+      <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">169.00 лв.</p>
+      <a class="button" href="keyboard3.html" style="background-color: #0dcaf0;">Купи</a><br><br>
+    </div>
+  </div>
+</div>
+
+<div class="redragon kabel">
+  <div class="card">
+    <img src="img/periferia/keyboard/4.jpg">
+    <div class="card-body">
+    <h3>Redragon Jax K613</h3>
+    <p>•Технология: С кабел<br>
+      •Интерфейс: USB Type-C<br>
+      •Подсветка: Да<br>
+      •БДС кирилизация: Не<br>
+      •Гаранционен срок: 24 месеца гаранция</p>
+      <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">62.00 лв.</p>
+      <a class="button" href="keyboard4.html" style="background-color: #0dcaf0;">Купи</a><br><br>
+    </div>
+  </div>
+</div>
+
+<div class="redragon kabel">
+  <div class="card">
+    <img src="img/periferia/keyboard/5.jpg">
+    <div class="card-body">
+    <h3>Redragon Shiva K512 RGB</h3>
+    <p>•Технология: С кабел<br>
+      •Интерфейс: USB<br>
+      •Подсветка: Да<br>
+      •БДС кирилизация: Не<br>
+      •Гаранционен срок: 24 месеца гаранция</p>
+      <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">49.00 лв.</p>
+      <a class="button" href="keyboard5.html" style="background-color: #0dcaf0;">Купи</a><br><br>
+    </div>
+  </div>
+</div>
+
+<div class="razer kabel">
+  <div class="card">
+    <img src="img/periferia/keyboard/6.jpg">
+    <div class="card-body">
+    <h3>Razer Ornata V3 X</h3>
+    <p>•Технология: С кабел<br>
+      •Интерфейс: USB<br>
+      •Подсветка: Да<br>
+      •БДС кирилизация: Не<br>
+      •Гаранционен срок: 24 месеца гаранция</p>
+      <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">89.00 лв.</p>
+      <a class="button" href="keyboard6.html" style="background-color: #0dcaf0;">Купи</a><br><br>
+    </div>
+  </div>
+</div>
+
+<div class="steel kabel">
+  <div class="card">
+    <img src="img/periferia/keyboard/7.jpg">
+    <div class="card-body">
+    <h3>SteelSeries Apex 3</h3>
+    <p style="margin-bottom: 12%;">•Технология: С кабел<br>
+      •Интерфейс: USB<br>
+      •Подсветка: Да<br>
+      •БДС кирилизация: Не<br>
+      •Гаранционен срок: 24 месеца гаранция</p>
+      <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">109.00 лв.</p>
+      <a class="button" href="keyboard7.html" style="background-color: #0dcaf0;">Купи</a>
+    </div>
+  </div>
+</div>
+
+<div class="cougar kabel">
+  <div class="card">
+    <img src="img/periferia/keyboard/8.jpg">
+    <div class="card-body">
+    <h3>COUGAR Vantar MX</h3>
+    <p style="margin-bottom: 50%;">•Технология: С кабел<br>
+      •Интерфейс: USB<br>
+      •Подсветка: Да<br>
+      •Гаранционен срок: 24 месеца гаранция</p>
+      <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">159.00 лв.</p>
+      <a class="button" href="keyboard8.html" style="background-color: #0dcaf0;">Купи</a><br><br>
+    </div>
+  </div>
+</div>
+
+<div class="logitech wireless">
+  <div class="card">
+    <img src="img/periferia/keyboard/9.jpg">
+    <div class="card-body">
+    <h3>Logitech MX Keys Mini</h3>
+    <p style="margin-bottom: 70%;">•Технология: Безжична<br>
+      •Интерфейс: Bluetooth<br>
+      •Подсветка: Да<br>
+      •БДС кирилизация: Не<br>
+      •Гаранционен срок: 24 месеца гаранция</p>
+      <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">239.00 лв.</p>
+      <a class="button" href="keyboard9.html" style="background-color: #0dcaf0;">Купи</a><br><br>
+    </div>
+  </div>
+</div>
+
+<div class="steel wireless">
+  <div class="card">
+    <img src="img/periferia/keyboard/10.jpg" height="309px">
+    <div class="card-body">
+    <h3>SteelSeries Apex Pro TKL 2023</h3>
+    <p>•Технология: Безжична, С кабел<br>
+      •Интерфейс: Bluetooth, USB Type-C<br>
+      •Подсветка: Да<br>
+      •БДС кирилизация: Не<br>
+      •Гаранционен срок: 24 месеца гаранция</p>
+      <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">529.00 лв.</p>
+      <a class="button" href="keyboard10.html" style="background-color: #0dcaf0;">Купи</a><br><br>
+    </div>
+  </div>
+</div>
+
+<div class="razer wireless">
+  <div class="card">
+    <img src="img/periferia/keyboard/11.jpg">
+    <div class="card-body">
+    <h3>Razer DeathStalker V2 Pro</h3>
+    <p style="margin-bottom: 45%;">•Технология: Безжична, С кабел<br>
+      •Интерфейс: Bluetooth, USB Type-C<br>
+      •Подсветка: Да<br>
+      •БДС кирилизация: Не<br>
+      •Гаранционен срок: 24 месеца гаранция</p>
+      <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">489.00 лв.</p>
+      <a class="button" href="keyboard11.html" style="background-color: #0dcaf0;">Купи</a><br><br>
+    </div>
+  </div>
+</div>
+
+<div class="logitech wireless">
+  <div class="card">
+    <img src="img/periferia/keyboard/12.jpg">
+    <div class="card-body">
+    <h3>Logitech G915 TKL</h3>
+    <p style="margin-bottom: 78%;">•Технология: Безжична, С кабел<br>
+      •Интерфейс: Bluetooth, USB<br>
+      •Подсветка: Да<br>
+      •БДС кирилизация: Не<br>
+      •Гаранционен срок: 12 месеца гаранция</p>
+      <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">529.00 лв.</p>
+      <a class="button" href="keyboard12.html" style="background-color: #0dcaf0;">Купи</a><br><br>
+    </div>
+  </div>
+</div>
+
+<div class="delux kabel">
+  <div class="card">
+    <img src="img/periferia/keyboard/13.jpg">
+    <div class="card-body">
+    <h3>Delux KA193U</h3>
+    <p style="margin-bottom: 25%;">•Технология: С кабел<br>
+      •Интерфейс: USB<br>
+      •Подсветка: Не<br>
+      •БДС кирилизация: Да<br>
+      •Гаранционен срок: 24 месеца гаранция</p>
+      <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">17.00 лв.</p>
+      <a class="button" href="keyboard13.html" style="background-color: #0dcaf0;">Купи</a><br><br>
+    </div>
+  </div>
+</div>
+
+<div class="delux wireless">
+  <div class="card">
+    <img src="img/periferia/keyboard/14.jpg">
+    <div class="card-body">
+    <h3>Delux K6060G</h3>
+    <p style="margin-bottom: 10%;">•Технология: Безжична<br>
+      •Интерфейс: USB<br>
+      •Подсветка: Не<br>
+      •БДС кирилизация: Да<br>
+      •Гаранционен срок: 24 месеца гаранция</p>
+      <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">26.00 лв.</p>
+      <a class="button" href="keyboard14.html" style="background-color: #0dcaf0;">Купи</a><br><br>
+    </div>
+  </div>
+</div>
+
+<div class="delux wireless">
+  <div class="card">
+    <img src="img/periferia/keyboard/15.jpg">
+    <div class="card-body">
+    <h3>Delux K3300GX</h3>
+    <p>•Технология: Безжична<br>
+      •Интерфейс: Без интерфейс<br>
+      •Подсветка: Не<br>
+      •БДС кирилизация: Не<br>
+      •Гаранционен срок: 24 месеца гаранция</p>
+      <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">29.00 лв.</p>
+      <a class="button" href="keyboard15.html" style="background-color: #0dcaf0;">Купи</a><br><br>
+    </div>
+  </div>
+</div>
+
+<div class="delux wireless">
+  <div class="card">
+    <img src="img/periferia/keyboard/16.jpg">
+    <div class="card-body">
+    <h3>Delux SK800GL</h3>
+    <p style="margin-bottom: 30%;">•Технология: Безжична<br>
+      •Интерфейс: USB<br>
+      •Подсветка: Да<br>
+      •БДС кирилизация: Не<br>
+      •Гаранционен срок: 24 месеца гаранция</p>
+      <p style="color: #0dcaf0; font-size: 20px;float: left;margin-right: 30%;">43.00 лв.</p>
+      <a class="button" href="keyboard16.html" style="background-color: #0dcaf0;">Купи</a><br><br>
+    </div>
+  </div>
+</div>
+
+</div>
+    <div id="footer" style="margin-top: 120%;">
+        <div class="footer-links">
+    <a href="index.html">Начало</a>
+    <a href="about.html">За нас</a>
+    <a href="laptopi.html">Лаптопи</a>
+    <a href="komputri.html">Компютри</a>
+    <a href="periferia.html">Периферия</a>
+    <a href="gallery.html">Галерия</a>
+    <a href="news.html">Новини</a>
+    <a href="contacts.html">Контакти</a>
+  </div>
+  <div class="footer-social">
+    <a href="https://www.facebook.com/emre.feim/" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/emre.dzh05/?theme=dark" target="_blank">Instagram</a>
+    <a href="https://www.youtube.com/@emre4323" target="_blank">YouTube</a>
+  </div>
+  <div class="footer-partners">
+  <p>Партньори:</p>
+  <a href="https://www.intel.com" target="_blank">Intel</a> |
+  <a href="https://www.microsoft.com" target="_blank">Microsoft</a> |
+  <a href="https://www.google.com" target="_blank">Google</a>
+</div>
+<br>
+  <p class="footer-copy">© 2026 ЕМО Клуб | Всички права запазени</p>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

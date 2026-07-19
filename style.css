@@ -1,0 +1,218 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    /*background-image: url("img/background.png");*/
+    background:linear-gradient(135deg, #eef2f3 0%, #d9e4f5 100%),
+      repeating-linear-gradient(
+        45deg,
+        rgba(255,255,255,0.02),
+        rgba(255,255,255,0.02) 1px,
+        transparent 1px,
+        transparent 3px
+      );
+}
+#logo{
+    float: left ;
+    margin-top: 35px;
+    margin-right: 50px;
+    margin-left: 10%;
+    width: 500px;
+}
+#phone{
+    margin-top: 20px;
+}
+#search{
+    float: left;
+}
+.profile{
+    float: left;
+    margin-right: 20px;
+}
+.favourite{
+    float: left;
+    margin-right: 20px;
+}
+/*navigation*/
+#nav{
+    background-color: #0dcaf0;
+    color: black;
+}
+.main-nav {
+    background: #ffffff;
+    border-bottom: 2px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu li {
+    margin: 0;
+}
+
+.nav-menu a {
+    display: block;
+    padding: 16px 22px;
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    background: #0dcaf0;
+    color: #ffffff;
+}
+
+/* Активна страница */
+.nav-menu a.active {
+    background: #0dcaf0;
+    color: #ffffff;
+}
+/*footer*/
+#footer {
+  background-color: #2c3e50;
+  color: #ffffff;
+  padding: 25px 10px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#footer a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-links {
+  margin-bottom: 10px;
+}
+
+.footer-social {
+  margin-bottom: 10px;
+}
+
+.footer-copy {
+  font-size: 14px;
+  opacity: 0.8;
+}
+/*gallery*/
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+/*index*/
+.card{
+    margin: 20px;
+    float: left;
+}
+/*about*/
+div.secondsegment{
+    display: block;
+    justify-content: center;
+}
+fieldset.second{
+    display: inline-block;
+    justify-content: center;
+    border-radius: 20px;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    padding: auto;
+}
+#team{
+    text-align: center;
+    border-radius: 50px;
+    color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#boxes{
+    display: flex;
+    justify-content: center;
+}
+.otziv{
+    margin-top: 28px;
+    margin-left: 85px;
+    font-size: 22px;
+}
+.video{
+    margin-left: 25%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/*Periferia*/
+.periferia{
+    margin-left: 27%;
+    margin-top: 10px;
+    float: left;
+}
+/*filter*/
+.filterDiv {
+    float: left;
+    background-color: #2196F3;
+    color: #ffffff;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin: 2px;
+    display: none;
+  }
+.filter{
+    margin-bottom: 100%;
+} 
+  .show {
+    display: block;
+  }
+  
+  .container {
+    margin-top: 20px;
+    overflow: hidden;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+  
